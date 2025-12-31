@@ -1,91 +1,126 @@
-🎬 SEV7NSECONDS’ LEGACY
+# PROJECT SEV7NSECONDS
+#### Video Demo : https://youtu.be/Crs41sXmz6s
+#### Description :
 
-CS50 Final Project – Cinematic Frontend Website
+A Cinematic Frontend Portfolio Experience
 
-📌 Overview
+CS50 Final Project
 
-SEV7NSECONDS’ LEGACY is a cinematic, frontend-only web project created as my final submission for CS50.
+Overview
 
-Instead of building a traditional static website or CRUD application, this project explores how animation, timing, and user interaction can be used to create an immersive experience using only client-side technologies.
+PROJECT SEV7NSECONDS is a cinematic, frontend-only web project created as my final submission for CS50.
+Rather than functioning as a traditional website, this project is designed as an experience-first digital portfolio, tailored especially for digital artists and creatives who want to present their work in a memorable and immersive way.
 
-The website behaves more like a movie intro or system boot sequence than a conventional webpage, guiding the user through animated phases before arriving at the main interface.
+The site behaves more like an animated intro sequence than a conventional webpage. The user is guided through a sequence of transitions, glitch effects, and timed reveals before reaching the main content — much like the opening moments of a film or game.
 
-No backend, database, or API is used — the entire experience runs directly in the browser.
+This project runs entirely on the client side, using only HTML, CSS, JavaScript, and Vue.js, with no backend, API, or database involved.
 
-🎯 Project Goals
+Project Motivation
 
-The main goals of this project were:
+The core motivation behind this project was a simple question:
 
-To demonstrate strong frontend fundamentals
+How can a portfolio feel like a story, not just a collection of links?
 
-To explore animation-driven UI design
+Inspiration was drawn heavily from Cyberpunk: Edgerunners, particularly its use of:
 
-To practice state management without a backend
+Abrupt transitions
 
-To build something that feels intentional, immersive, and polished
+Visual glitches as storytelling tools
 
-To keep the project lightweight and portable
+Text and UI elements that feel unstable, alive, and emotional
 
-This project is also designed to be understandable and extendable by beginners.
+Silence and timing used as dramatic devices
 
-🛠 Technologies Used
+Rather than treating glitches as errors, this project embraces them as intentional design language, representing themes of identity, memory, and digital legacy.
 
-HTML – Structure and semantic layout
+This approach fits naturally with the idea of a digital artist portfolio, where atmosphere and emotion are just as important as content.
 
-CSS – Styling, transitions, and visual effects
+Concept: A Portfolio as an Experience
 
-JavaScript – Animation logic, timing, and interactions
+This website is designed as a sample portfolio for a digital artist, not as a final commercial product.
 
-Vue.js (CDN) – UI state management and conditional rendering
+The goal is to demonstrate how:
 
-Why Vue CDN?
+A portfolio can feel cinematic
 
-Vue is included via CDN to:
+Transitions can convey mood
 
-Avoid build tools and configuration
+Minimal content can still leave a strong impression
 
-Keep the project easy to run
+Frontend logic can support storytelling
 
-Focus on logic and interaction rather than setup
+Instead of overwhelming the user with information, the site:
 
-No npm, bundler, or framework installation is required.
+Introduces itself slowly
 
-🚀 Features
-🎞 Cinematic Intro Flow
+Builds anticipation
+
+Uses animation to guide attention
+
+Allows the visuals to breathe
+
+Technologies Used
+
+HTML — Semantic structure and layout
+
+CSS — Styling, transitions, flicker effects, and layout
+
+JavaScript — Timing logic, text scrambling, interaction handling
+
+Vue.js (via CDN) — State management and conditional rendering
+
+Why Vue via CDN?
+
+Vue was included using a CDN instead of a full npm-based setup in order to:
+
+Keep the project lightweight
+
+Avoid build tools and configuration overhead
+
+Make the project easy to run and review
+
+Focus on logic and interaction rather than tooling
+
+This decision also makes the project more accessible to beginners.
+
+Key Features
+Cinematic Intro Sequence
 
 Scrambled text glitch animation for the title
 
 Scrambled glitch animation for the entry button
 
-Subtle flicker effect after text resolution
+Subtle flicker effect after resolution
 
-Controlled timing to allow animations to fully play
+Carefully timed reveals to allow animations to complete
 
-🔀 Phase-Based Navigation
+Phase-Based Flow
 
-The website progresses through multiple phases:
+The site progresses through several phases:
 
-Start screen
+Start Screen – title and button introduction
 
-Intro sequence
+Intro Sequence – audiovisual transition
 
-Glitch transition
+Glitch Overlay – brief disruption before entering
 
-Main interface
+Main Interface – portfolio content
 
-Each phase is controlled using Vue state and conditional rendering.
+Each phase is controlled using Vue’s reactive state.
 
-🧠 Text-Based Glitch Effects
-
-No RGB color distortion
+Text-Based Glitch Effects
 
 Characters scramble and resolve progressively
 
-Effects feel deliberate and readable
+No RGB color distortion
 
-Implemented using custom JavaScript logic
+Focus on motion, timing, and readability
 
-📂 Tab-Based Main Interface
+Inspired by cyberpunk UI aesthetics rather than error simulation
+
+Portfolio-Style Navigation
+
+The main interface includes multiple sections such as:
 
 Home
 
@@ -93,136 +128,110 @@ Portfolio
 
 Contact
 
-Each tab triggers:
+Each section uses animated transitions and glitch effects to maintain visual consistency.
 
-Animated text updates
+Project Structure
 
-UI transitions
+The entire project exists inside a single HTML file.
 
-Sound and visual feedback
-
-🧩 Project Structure
-
-The entire project lives inside a single HTML file.
-
-This was a deliberate decision to:
+This was a deliberate design choice to:
 
 Keep the project portable
 
-Make it easy to review
+Make it easy to open and review
 
-Reduce complexity
+Reduce unnecessary complexity
 
-Emphasize logic and behavior over tooling
+Highlight logic and animation rather than file structure
 
-Despite being a single file, the code is organized into logical sections:
+Despite being a single file, the code is separated into clear sections:
 
-HTML layout
+Markup
 
-CSS effects
+Styling
 
 Vue application logic
 
 Reusable animation functions
 
-🧪 How It Works
+How It Works
 Vue State Management
 
-Vue is used to control:
+Vue controls:
 
-Which screen is visible
+Which phase is currently active
 
-When animations start
+When elements appear or disappear
 
-When buttons become interactive
+When animations begin and end
 
-When transitions occur
+When user interaction is enabled
 
-Instead of manually manipulating the DOM everywhere, Vue keeps the UI predictable and readable.
+This makes the UI predictable and avoids manual DOM manipulation wherever possible.
 
-Glitch Animation Logic
+Text Scramble Logic
 
-The text glitch effect works by:
+The glitch effect works by:
 
 Replacing characters with random symbols
 
-Gradually locking characters into their correct position
+Gradually locking correct characters into place
 
-Updating the DOM at short intervals
+Updating the text at short time intervals
 
-Ending with a subtle flicker effect
+Ending with a subtle flicker animation
 
-This approach focuses on motion and timing, not heavy visual effects.
+This creates the illusion of unstable data resolving into meaning.
 
-🖥 How to Run the Project
+How to Run the Project
 
-No installation required.
+No installation is required.
 
 Clone or download the repository
 
-Open index.html in any modern browser
+Open index.html in a modern browser
 
-Make sure audio is enabled for the full experience
+Enable audio for the full experience
 
-That’s it.
+That’s all.
 
-🎓 Educational Value
+Educational Value
 
 This project demonstrates:
 
 Frontend animation techniques
 
-JavaScript timing and intervals
+JavaScript timing and control flow
 
 Vue conditional rendering
 
 UI state transitions
 
-Separation of logic and styling
+How design inspiration can shape technical decisions
 
-How small details improve user experience
+It also shows how non-traditional websites can still be valid and effective CS50 projects.
 
-It also serves as a foundation that can be extended into:
+Future Improvements
 
-A full portfolio
+Possible future enhancements include:
 
-A game intro
+Mobile responsiveness
 
-A storytelling website
+Accessibility options
 
-A personal brand landing page
+User-controlled animation toggles
 
-🔮 Possible Improvements
+Backend integration for dynamic portfolios
 
-If expanded further, this project could include:
-
-Mobile optimization
-
-Accessibility improvements
-
-Performance optimizations
-
-Backend integration
-
-User-controlled animation settings
-
-Localization support
+Localization and language support
 
 These were intentionally left out to keep the scope appropriate for CS50.
 
-🧾 Acknowledgements
+Final Thoughts
 
-Inspired by cinematic UI design and system boot sequences
+PROJECT SEV7NSECONDS is an exploration of how frontend technologies can be used not just to display content, but to tell a story.
 
-Built as part of CS50
+Inspired by cyberpunk aesthetics and designed as a digital artist portfolio, this project focuses on mood, timing, and presence rather than raw complexity.
 
-Thanks to the CS50 staff for providing a strong foundation in computer science
-
-🏁 Final Notes
-
-This project was created to explore how far frontend technologies alone can go when attention is paid to detail, timing, and user experience.
-
-Rather than focusing on complexity, the emphasis was placed on clarity, control, and immersion.
-
-This was SEV7NSECONDS’ LEGACY.
+This was PROJECT SEV7NSECONDS.
 This was CS50.
